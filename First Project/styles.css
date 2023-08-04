@@ -1,0 +1,259 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The lines below this contains the top part of the page having classes - header, upper, lower */
+
+.header{
+    width: 80%;
+    border-top: 0.6rem solid;
+    border-color: rgb(8,49,128);
+    align-items: center;
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+}
+.upper{
+    width: 90%;
+    display: inline-block;
+    margin-top: -2px;
+
+}
+.upper span{
+    color: rgba(0,0,0,0.9);
+    margin-left: 5px;
+
+}
+.upper a{
+    margin-top: 10px;
+    display: inline;
+    float: right;
+    color: rgb(8,49,128);
+    font-weight: bold;
+}
+.upper p{
+    display: inline;
+    float: left;
+}
+
+.lower p{
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(8,49,128);
+    margin: 2px;
+}
+
+.lower a{
+    color: rgba(0,0,0,0.9);
+    margin: 2px;
+}
+
+/* The lines below it contains the form having two main parts - fieldset and form-below */
+
+form {
+    width: 65vw;
+    max-width: 1050px;
+    min-width: 300px;
+    background-color:rgb(226,236,255);
+    margin: 2rem auto;
+    padding-bottom: 0em;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    margin-left: 30px;
+    padding-bottom: 15px;
+  }
+
+  label[for="to"] span{
+    margin-right: 200px;
+    color: rgba(0,0,0,0.5);
+    font-size: 1.1em;
+ }
+
+ label[for="to"] b{
+    margin-left: 70px;
+    font-size: 1.1em;
+ }
+
+  label textarea{
+    vertical-align:text-top;
+    margin-top: 0;
+    margin-left: 10px;
+    width: 80%;
+ }
+
+  label[for="message"] b{
+    margin-top: 50px;
+    font-size: 1.1em;
+    margin-left: 20px;
+ }
+
+ input, textarea {
+    background-color: white;
+    border: 1px solid white;
+    color: #ffffff;
+    margin: 10px 15px 10px 15px;
+    min-height: 2em;
+    border-radius: 5px;
+  }
+
+  input[id="to"]{
+    width: 40%
+  }
+
+  fieldset a{
+    margin-left: 115px;
+    color: rgb(8,49,128);
+  }
+
+  .form-below{
+    margin-left: 120px;
+    display: flex;
+    font-size: 1.1em;
+    text-align:center;
+    color: rgba(0,0,0,0.4);
+    padding-bottom: -50px;
+  }
+
+  input[id="submit"]{
+    width: 35%;
+    height: 20%;
+    display: flex;
+    background-color: rgb(8,49,128);
+    font-size: 1.7em;
+    border-radius: 2px;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 25px;
+    text-align: center;
+  }
+
+  .form-below p{
+    padding-top: 10px;
+    font-size: 1.4em;
+  }
+
+  .form-below a{
+    font-weight: bold;
+    color: rgba(0,0,0,0.4);
+  }
+
+  /* The lines below it contains the 1 line of page having class middle-div in which a nav bar of three items and 1 anchor tag is present */
+
+  .middle-div{
+    width: 75%;
+    display: flex;
+  }
+
+  .nav{
+    display: flex;
+  }
+
+  .first{
+    background-color: rgb(195, 210, 239);
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px solid #AEC0E2;
+  }
+
+  .second{
+    background-color: rgb(195, 210, 239);
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px solid #AEC0E2;
+  }
+
+  .third{
+    background-color: rgb(226,236,255);
+    margin-right: 5px;
+    padding: 5px;
+    border: 2px solid #AEC0E2;
+    border-bottom: none;
+  }
+
+  .middle-div a{
+    margin-left: 600px;
+    margin-top: 10px;
+    display: inline;
+    float: right;
+    color: rgb(8,49,128);
+    font-weight: bold;
+
+  }
+
+ /* This is the final part of the page named as class lower-div having 4 main classes head, line, mid, foot  */
+
+  .lower-div{
+    width: 100%;
+    background-color: rgb(226,236,255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid #AEC0E2;
+  }
+
+  .line{
+    border-bottom: 2px solid #AEC0E2;
+    margin: 0 0 -2px 0;
+  }
+
+    /* This contains the mid class of the lower-div having classe mid for complete photo blocks and class div-photo contains the content for each photo*/
+
+  .mid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 16px;
+    /* max-width: 1400px; */
+    margin: 20px;
+    padding: 20px 10px;
+    justify-content: center;
+  }
+
+  .div-photo{
+    padding: 20px;
+    background-color: white;
+    width: 240px;
+    max-width: 400px;
+    height: 300px;
+    justify-content: center;
+    /* object-fit: cover; */
+    /* border-radius: 10px; */
+  }
+
+  .div-photo img{
+    height: 280px;
+    width: 220px;
+    max-width: 330px;
+    object-fit: cover;   
+}
+
+.div-photo p{
+  font-size: medium;
+  margin: 2px auto 0;
+}
+
+.div-photo .date{
+  color: #7A8CB0;
+  font-size: small;
+  margin-top: 2px auto;
+}
+
+/* Final foot box */
+  .foot{
+    background-color: rgb(8,49,128);
+    width: 25%;
+    margin: 1em auto 1em auto;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+  }
+
+  .foot a{
+    font-size: 1.2em;
+    color: white;
+  }
